@@ -1,6 +1,10 @@
 ---
-import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import "../styles/global.css";
+import { Icon } from "astro-icon/components";
+import Services from "../components/Services.astro";
+import Reviews from "../components/Reviews.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -8,8 +12,20 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <!-- <Welcome /> -->
-  <div style="background-color: red; height: 100px; width: 100%;"></div>
+  <Hero />
+  <section class="programmer container blur2 grid-sm">
+    <Icon
+      name="programmer"
+      width="400"
+      height="400"
+      class="programmer-icon"
+      aria-hidden="true"
+    />
+  </section>
+  <Services />
+  <Reviews />
+  <!-- <div style="background-color: red; height: 100px; width: 100%;"></div>
   <div style="background-color: blue; height: 100px; width: 100%;"></div>
-  <div style="background-color: green; height: 100px; width: 100%;"></div>
-  <div style="background-color: yellow; height: 100px; width: 100%;"></div>
+  <div style="background-color: green; height: 100px; width: 100%;"></div> -->
+  <!-- <div style="background-color: yellow; height: 100px; width: 100%;"></div> -->
 </Layout>

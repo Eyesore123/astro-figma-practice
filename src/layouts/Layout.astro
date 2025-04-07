@@ -7,28 +7,24 @@ import Navbar from "../components/Navbar.astro";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="https://unpkg.com/open-props" />
     <title>Design Landing Page</title>
-    <style>
-      @import url("../styles/global.css");
-    </style>
   </head>
   <body>
+    <Navbar />
     <div class="wrapper">
-      <Navbar />
       <main>
         <slot />
       </main>
       <footer class="blur">
-        <small>Copyright &copy; <span id="copyrightyear"></span> Desgn</small>
+        <small>
+          Copyright &copy; <span id="copyrightyear"></span> Desgn
+        </small>
       </footer>
     </div>
     <script>
-      // Get the current year
       const currentYear = new Date().getFullYear();
-      // Set the copyright year in the footer
-      document.getElementById("copyrightyear")!.textContent =
-        currentYear.toString();
+      document.getElementById("copyrightyear").textContent = currentYear;
     </script>
   </body>
 </html>

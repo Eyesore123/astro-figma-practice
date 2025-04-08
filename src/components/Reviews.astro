@@ -1,0 +1,100 @@
+---
+import data from "../data/reviews.json";
+import "../styles/global.css";
+---
+
+<section class="review-wrapper">
+  <h2 class="sr-only">Reviews</h2>
+  <div class="reviews-container container-xs">
+    <button
+      class="review-btn grid-sm review-btn--prev"
+      id="prev"
+      aria-label="previous review"
+      style="width: 120px;"
+    >
+      <img
+        src="/chevron-left.svg"
+        alt="next review"
+        width="50"
+        height="50"
+        loading="lazy"
+        class="invert"
+      />
+    </button>
+    <div class="reviews">
+      {
+        data.slice(data.length - 1).map((review) => (
+          <div class="review grid-sm">
+            <img
+              src={`/${review?.avatar}`}
+              alt={review?.name}
+              width="80"
+              height="80"
+              loading="lazy"
+              class="review-avatar"
+            />
+            <p class="review--content">{review?.content}</p>
+            <p class="review--name text-gradient">{review?.name}</p>
+          </div>
+        ))
+      }
+      {
+        data.map((review) => (
+          <div class="review grid-sm">
+            <img
+              src={`/${review?.avatar}`}
+              alt={review?.name}
+              width="80"
+              height="80"
+              loading="lazy"
+              class="review-avatar"
+            />
+            <p class="review--content">{review?.content}</p>
+            <p class="review--name text-gradient">{review?.name}</p>
+          </div>
+        ))
+      }
+      {
+        data.slice(0, 1).map((review) => (
+          <div class="review grid-sm">
+            <img
+              src={`/${review?.avatar}`}
+              alt={review?.name}
+              width="80"
+              height="80"
+              loading="lazy"
+              class="review-avatar"
+            />
+            <p class="review--content">{review?.content}</p>
+            <p class="review--name text-gradient">{review?.name}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="indicator-container">
+      {
+        data.map((review) => (
+          <button class="indicator ${review?.active && 'active'}" /></button>
+        ))
+      }
+    </div>
+    <button
+      class="review-btn grid-sm review-btn--next"
+      id="next"
+      aria-label="next review"
+      style="width: 120px;"
+    >
+      <img
+        src="/chevron-right.svg"
+        alt="next review"
+        width="50"
+        height="50"
+        loading="lazy"
+        class="invert"
+      />
+    </button>
+  </div>
+</section>
+
+<script src="/js/testimonials.js" type="module"></script>

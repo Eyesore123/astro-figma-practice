@@ -595,10 +595,13 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0 var(--size-fluid-3);
+  width: 100%;
+  margin-top: var(--size-fluid-3);
 }
 
 .client-logo {
   flex: 0 1 var(--size-fluid-5);
+  filter: invert(100%);
 }
 
 /* CTA */

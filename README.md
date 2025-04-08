@@ -1,34 +1,14 @@
-# Astro Starter Kit: Basics
+# Astro practice
 
-```sh
-npm create astro@latest -- --template basics
-```
+This is a practice project for Astro and Figma. Original project repo can be found here: https://github.com/coding-in-public/desgn-landing-page
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Big thanks to [@coding-in-public](https://github.com/coding-in-public) for the original project!
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This repo follows the original project with some changes:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- Code updated so that it works with current Astro version (5.6). A lot of the assets are moved to the `public` folder so that Astro can serve them directly.
+- Javascript is now imported from the `public` folder instead of the `src` folder and I made small fixes to Javascript code so that it works properly.
+- I also downloaded most of the assets for local use so that when there are changes to Astro or to library imports, I don't have to come and fix code every time. I noticed that the original project was not working with the latest Astro version and a lot of the code was outdated and deprecated so I fixed all that.
 
 ## 🧞 Commands
 
@@ -42,7 +22,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

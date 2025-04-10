@@ -62,7 +62,47 @@ body {
 
 @media (max-width: 900px) {
   .wrapper {
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    scale: 0.9;
+    margin-top: -230px;
+    margin-bottom: -200px;
+    gap: 0;
+  }
+
+  .pricing-card {
+    margin-top: 16px;
+  }
+
+  p.review-content {
+    scale: 0.8;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  button.review-btn {
+    scale: 0.5;
+    width: 70px !important;
+  }
+  div.text-white {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    margin: auto !important;
+    text-align: center !important;
+  }
+
+  .invert2 {
+    margin-left: 155px;
+    scale: 0.7;
+  }
+
+  .programmer-icon {
+    margin-top: -100px;
+    margin-bottom: -100px;
   }
 }
 
@@ -306,6 +346,7 @@ small {
 
 .nav-wrapper ul.nav-links {
   list-style: none !important;
+  z-index: 100;
 }
 
 .nav-links {

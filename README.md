@@ -11,6 +11,8 @@ This repo follows the original project with some changes:
 - I also downloaded most of the assets for local use so that when there are changes to Astro or to library imports, I don't have to come and fix code every time. I noticed that the original project was not working with the latest Astro version and a lot of the code was outdated and deprecated so I fixed all that.
 - Blurs are a bit different and "blur2" effect is added to create slightly different effect.
 
+Figma file image is attached to files with the file name: DSGN.png.
+
 Mobile styles are still lacking so I'll add them later.
 
 ## 🧞 Commands
